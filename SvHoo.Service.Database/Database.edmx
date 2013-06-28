@@ -1,0 +1,1215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SvHoo.Service.Implement.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="SvHooServiceImplementStoreContainer">
+          <EntitySet Name="Area" EntityType="SvHoo.Service.Implement.Store.Area" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Banner" EntityType="SvHoo.Service.Implement.Store.Banner" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="BannerLocation" EntityType="SvHoo.Service.Implement.Store.BannerLocation" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Booking" EntityType="SvHoo.Service.Implement.Store.Booking" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="BookingItem" EntityType="SvHoo.Service.Implement.Store.BookingItem" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Category" EntityType="SvHoo.Service.Implement.Store.Category" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Customer" EntityType="SvHoo.Service.Implement.Store.Customer" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="CustomerExt" EntityType="SvHoo.Service.Implement.Store.CustomerExt" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="CustomerOrder" EntityType="SvHoo.Service.Implement.Store.CustomerOrder" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="News" EntityType="SvHoo.Service.Implement.Store.News" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="NewsType" EntityType="SvHoo.Service.Implement.Store.NewsType" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Order" EntityType="SvHoo.Service.Implement.Store.Order" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="OrderItem" EntityType="SvHoo.Service.Implement.Store.OrderItem" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Product" EntityType="SvHoo.Service.Implement.Store.Product" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="ProductProperty" EntityType="SvHoo.Service.Implement.Store.ProductProperty" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="ProductReview" EntityType="SvHoo.Service.Implement.Store.ProductReview" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Property" EntityType="SvHoo.Service.Implement.Store.Property" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="PropertyValue" EntityType="SvHoo.Service.Implement.Store.PropertyValue" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Seller" EntityType="SvHoo.Service.Implement.Store.Seller" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="SellerAction" EntityType="SvHoo.Service.Implement.Store.SellerAction" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="SellerRole" EntityType="SvHoo.Service.Implement.Store.SellerRole" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="SellerRoleAction" EntityType="SvHoo.Service.Implement.Store.SellerRoleAction" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="SellerUser" EntityType="SvHoo.Service.Implement.Store.SellerUser" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Stores" EntityType="SvHoo.Service.Implement.Store.Stores" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="StoresUser" EntityType="SvHoo.Service.Implement.Store.StoresUser" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="SysAction" EntityType="SvHoo.Service.Implement.Store.SysAction" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="SysConfig" EntityType="SvHoo.Service.Implement.Store.SysConfig" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="SysEventLog" EntityType="SvHoo.Service.Implement.Store.SysEventLog" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="SysRole" EntityType="SvHoo.Service.Implement.Store.SysRole" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="SysRoleAction" EntityType="SvHoo.Service.Implement.Store.SysRoleAction" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="SysUser" EntityType="SvHoo.Service.Implement.Store.SysUser" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+        </EntityContainer>
+        <EntityType Name="Area">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="Parent" Type="int" />
+          <Property Name="Title" Type="varchar" MaxLength="100" />
+          <Property Name="Priority" Type="int" />
+        </EntityType>
+        <EntityType Name="Banner">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="BannerType" Type="int" />
+          <Property Name="Title" Type="varchar" MaxLength="50" />
+          <Property Name="Value" Type="varchar" MaxLength="500" />
+          <Property Name="Note" Type="varchar" MaxLength="500" />
+          <Property Name="Status" Type="char" MaxLength="1" />
+          <Property Name="CreateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="BannerLocation">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="BannerSysNo" Type="int" />
+          <Property Name="PageID" Type="int" />
+          <Property Name="BeginDate" Type="datetime" />
+          <Property Name="EndDate" Type="datetime" />
+          <Property Name="Proiority" Type="int" />
+          <Property Name="Status" Type="char" MaxLength="1" />
+          <Property Name="CreateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Booking">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="StoresSysNo" Type="int" />
+          <Property Name="CustomerSysNo" Type="int" />
+          <Property Name="Amount" Type="decimal" />
+          <Property Name="PreTime" Type="datetime" />
+          <Property Name="Note" Type="varchar" MaxLength="200" />
+          <Property Name="Status" Type="char" MaxLength="1" />
+          <Property Name="CreateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="BookingItem">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="BookingSysNo" Type="int" />
+          <Property Name="ProductSysNo" Type="int" />
+          <Property Name="Quantity" Type="int" />
+          <Property Name="Price" Type="decimal" />
+          <Property Name="Status" Type="char" MaxLength="1" />
+          <Property Name="UpdateTime" Type="datetime" />
+          <Property Name="CreateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="StoresSysNo" Type="int" />
+          <Property Name="Parent" Type="int" />
+          <Property Name="Title" Type="varchar" MaxLength="100" />
+          <Property Name="Priority" Type="int" />
+          <Property Name="Status" Type="char" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="Customer">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="20" />
+          <Property Name="Password" Type="varchar" MaxLength="50" />
+          <Property Name="Status" Type="char" MaxLength="1" />
+          <Property Name="CreateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="CustomerExt">
+          <Key>
+            <PropertyRef Name="CustomerSysNo" />
+          </Key>
+          <Property Name="CustomerSysNo" Type="int" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="CustomerOrder">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="BookingSysNo" Type="int" />
+          <Property Name="OrderSysNo" Type="int" />
+          <Property Name="CustomerSysNo" Type="int" />
+        </EntityType>
+        <EntityType Name="News">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="NewsTypeSysNo" Type="int" />
+          <Property Name="Title" Type="varchar" MaxLength="200" />
+          <Property Name="Content" Type="text" />
+          <Property Name="TopMost" Type="bit" />
+          <Property Name="Status" Type="char" MaxLength="1" />
+          <Property Name="CreateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="NewsType">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="Parent" Type="int" />
+          <Property Name="Title" Type="varchar" MaxLength="50" />
+          <Property Name="Priority" Type="int" />
+          <Property Name="Status" Type="char" MaxLength="1" />
+          <Property Name="CreateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="StoresSysNo" Type="int" />
+          <Property Name="CustomerSysNo" Type="int" />
+          <Property Name="SellerUserSysNo" Type="int" />
+          <Property Name="Amount" Type="decimal" />
+          <Property Name="PreTime" Type="datetime" />
+          <Property Name="UseTime" Type="datetime" />
+          <Property Name="Note" Type="varchar" MaxLength="200" />
+          <Property Name="Status" Type="char" MaxLength="1" />
+          <Property Name="CreateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="OrderItem">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="OrderSysNo" Type="int" />
+          <Property Name="ProductSysNo" Type="int" />
+          <Property Name="Quantity" Type="int" />
+          <Property Name="Price" Type="decimal" />
+          <Property Name="Status" Type="char" MaxLength="1" />
+          <Property Name="UpdateTime" Type="datetime" />
+          <Property Name="CreateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="StoresSysNo" Type="int" />
+          <Property Name="CategorySysNo" Type="int" />
+          <Property Name="Title" Type="varchar" MaxLength="200" />
+          <Property Name="Code" Type="varchar" MaxLength="50" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="Price" Type="decimal" Precision="20" />
+          <Property Name="Note" Type="varchar" MaxLength="200" />
+          <Property Name="Detail" Type="varchar" MaxLength="1" />
+          <Property Name="Recommend" Type="bit" />
+          <Property Name="Priority" Type="int" />
+          <Property Name="Status" Type="char" MaxLength="1" />
+          <Property Name="CreateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="ProductProperty">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="ProductSysNo" Type="int" />
+          <Property Name="PropertySysNo" Type="int" />
+          <Property Name="PropertyValueSysNo" Type="int" />
+          <Property Name="CustomValue" Type="varchar" MaxLength="100" />
+          <Property Name="Priority" Type="int" />
+          <Property Name="Status" Type="char" MaxLength="1" />
+          <Property Name="CreateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="ProductReview">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="ProductSysNo" Type="int" />
+          <Property Name="Priority" Type="int" />
+          <Property Name="Status" Type="char" MaxLength="1" />
+          <Property Name="CreateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Property">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="CategorySysNo" Type="int" />
+          <Property Name="Title" Type="varchar" MaxLength="200" />
+          <Property Name="Note" Type="varchar" MaxLength="500" />
+          <Property Name="Priority" Type="int" />
+          <Property Name="Status" Type="char" MaxLength="1" />
+          <Property Name="CreateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="PropertyValue">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="PropertySysNo" Type="int" />
+          <Property Name="Value" Type="varchar" MaxLength="100" />
+          <Property Name="Priority" Type="int" />
+          <Property Name="Status" Type="char" MaxLength="1" />
+          <Property Name="CreateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Seller">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="Title" Type="varchar" MaxLength="100" />
+          <Property Name="Note" Type="varchar" MaxLength="500" />
+          <Property Name="Status" Type="char" MaxLength="1" />
+          <Property Name="CreateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SellerAction">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="Parent" Type="int" />
+          <Property Name="Title" Type="varchar" MaxLength="200" />
+          <Property Name="Url" Type="varchar" MaxLength="200" />
+          <Property Name="Type" Type="char" MaxLength="1" />
+          <Property Name="Priority" Type="int" />
+          <Property Name="Status" Type="char" MaxLength="1" />
+          <Property Name="CreateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SellerRole">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="SellerSysNo" Type="int" />
+          <Property Name="Title" Type="varchar" MaxLength="200" />
+          <Property Name="Status" Type="char" MaxLength="1" />
+          <Property Name="CreateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SellerRoleAction">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="RoleSysNo" Type="int" />
+          <Property Name="ActionSysNo" Type="int" />
+        </EntityType>
+        <EntityType Name="SellerUser">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="SellerSysNo" Type="int" />
+          <Property Name="RoleSysNo" Type="int" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" />
+          <Property Name="Password" Type="varchar" MaxLength="50" />
+          <Property Name="Status" Type="char" MaxLength="1" />
+          <Property Name="CreateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Stores">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="SellerSysNo" Type="int" />
+          <Property Name="AreaSysNo" Type="int" />
+          <Property Name="Title" Type="varchar" MaxLength="200" />
+          <Property Name="Name" Type="varchar" MaxLength="200" />
+          <Property Name="Address" Type="varchar" MaxLength="200" />
+          <Property Name="Phone" Type="varchar" MaxLength="20" />
+          <Property Name="WorkTime" Type="datetime" />
+          <Property Name="Note" Type="varchar" MaxLength="1000" />
+          <Property Name="Detail" Type="varchar" MaxLength="1" />
+          <Property Name="Priority" Type="int" />
+          <Property Name="Status" Type="char" MaxLength="1" />
+          <Property Name="CreateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="StoresUser">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="SellerUserSysNo" Type="int" />
+          <Property Name="StoresSysNo" Type="int" />
+          <Property Name="CreateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SysAction">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="Parent" Type="int" />
+          <Property Name="Title" Type="varchar" MaxLength="200" />
+          <Property Name="Url" Type="varchar" MaxLength="200" />
+          <Property Name="Type" Type="char" MaxLength="1" />
+          <Property Name="Priority" Type="int" />
+          <Property Name="Status" Type="char" MaxLength="1" />
+          <Property Name="CreateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SysConfig">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="Key" Type="varchar" MaxLength="200" />
+          <Property Name="Value" Type="varchar" MaxLength="200" />
+          <Property Name="Status" Type="char" MaxLength="1" />
+          <Property Name="CreateDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SysEventLog">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="Source" Type="varchar" MaxLength="200" />
+          <Property Name="Category" Type="varchar" MaxLength="100" />
+          <Property Name="IP" Type="varchar" MaxLength="20" />
+          <Property Name="HostName" Type="varchar" MaxLength="50" />
+          <Property Name="EventType" Type="int" />
+          <Property Name="EventTitle" Type="varchar" MaxLength="200" />
+          <Property Name="EventMessage" Type="text" />
+          <Property Name="EventDetail" Type="text" />
+          <Property Name="CreateDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SysRole">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="Title" Type="varchar" MaxLength="200" />
+          <Property Name="Status" Type="char" MaxLength="1" />
+          <Property Name="CreateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SysRoleAction">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="RoleSysNo" Type="int" />
+          <Property Name="ActionSysNo" Type="int" />
+        </EntityType>
+        <EntityType Name="SysUser">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="int" Nullable="false" />
+          <Property Name="StoresSysNo" Type="int" />
+          <Property Name="RoleSysNo" Type="int" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" />
+          <Property Name="Password" Type="varchar" MaxLength="50" />
+          <Property Name="Status" Type="char" MaxLength="1" />
+          <Property Name="CreateTime" Type="datetime" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SvHoo.Service.Implement" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntityContainer Name="DatabaseEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Area" EntityType="SvHoo.Service.Implement.Area" />
+          <EntitySet Name="Banner" EntityType="SvHoo.Service.Implement.Banner" />
+          <EntitySet Name="BannerLocation" EntityType="SvHoo.Service.Implement.BannerLocation" />
+          <EntitySet Name="Booking" EntityType="SvHoo.Service.Implement.Booking" />
+          <EntitySet Name="BookingItem" EntityType="SvHoo.Service.Implement.BookingItem" />
+          <EntitySet Name="Category" EntityType="SvHoo.Service.Implement.Category" />
+          <EntitySet Name="Customer" EntityType="SvHoo.Service.Implement.Customer" />
+          <EntitySet Name="CustomerExt" EntityType="SvHoo.Service.Implement.CustomerExt" />
+          <EntitySet Name="CustomerOrder" EntityType="SvHoo.Service.Implement.CustomerOrder" />
+          <EntitySet Name="News" EntityType="SvHoo.Service.Implement.News" />
+          <EntitySet Name="NewsType" EntityType="SvHoo.Service.Implement.NewsType" />
+          <EntitySet Name="Order" EntityType="SvHoo.Service.Implement.Order" />
+          <EntitySet Name="OrderItem" EntityType="SvHoo.Service.Implement.OrderItem" />
+          <EntitySet Name="Product" EntityType="SvHoo.Service.Implement.Product" />
+          <EntitySet Name="ProductProperty" EntityType="SvHoo.Service.Implement.ProductProperty" />
+          <EntitySet Name="ProductReview" EntityType="SvHoo.Service.Implement.ProductReview" />
+          <EntitySet Name="Property" EntityType="SvHoo.Service.Implement.Property" />
+          <EntitySet Name="PropertyValue" EntityType="SvHoo.Service.Implement.PropertyValue" />
+          <EntitySet Name="Seller" EntityType="SvHoo.Service.Implement.Seller" />
+          <EntitySet Name="SellerAction" EntityType="SvHoo.Service.Implement.SellerAction" />
+          <EntitySet Name="SellerRole" EntityType="SvHoo.Service.Implement.SellerRole" />
+          <EntitySet Name="SellerRoleAction" EntityType="SvHoo.Service.Implement.SellerRoleAction" />
+          <EntitySet Name="SellerUser" EntityType="SvHoo.Service.Implement.SellerUser" />
+          <EntitySet Name="Stores" EntityType="SvHoo.Service.Implement.Stores" />
+          <EntitySet Name="StoresUser" EntityType="SvHoo.Service.Implement.StoresUser" />
+          <EntitySet Name="SysAction" EntityType="SvHoo.Service.Implement.SysAction" />
+          <EntitySet Name="SysConfig" EntityType="SvHoo.Service.Implement.SysConfig" />
+          <EntitySet Name="SysEventLog" EntityType="SvHoo.Service.Implement.SysEventLog" />
+          <EntitySet Name="SysRole" EntityType="SvHoo.Service.Implement.SysRole" />
+          <EntitySet Name="SysRoleAction" EntityType="SvHoo.Service.Implement.SysRoleAction" />
+          <EntitySet Name="SysUser" EntityType="SvHoo.Service.Implement.SysUser" />
+        </EntityContainer>
+        <EntityType Name="Area">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="Parent" Type="Int32" />
+          <Property Name="Title" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Priority" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Banner">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="BannerType" Type="Int32" />
+          <Property Name="Title" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Value" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Note" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="BannerLocation">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="BannerSysNo" Type="Int32" />
+          <Property Name="PageID" Type="Int32" />
+          <Property Name="BeginDate" Type="DateTime" Precision="3" />
+          <Property Name="EndDate" Type="DateTime" Precision="3" />
+          <Property Name="Proiority" Type="Int32" />
+          <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Booking">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="StoresSysNo" Type="Int32" />
+          <Property Name="CustomerSysNo" Type="Int32" />
+          <Property Name="Amount" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="PreTime" Type="DateTime" Precision="3" />
+          <Property Name="Note" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="BookingItem">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="BookingSysNo" Type="Int32" />
+          <Property Name="ProductSysNo" Type="Int32" />
+          <Property Name="Quantity" Type="Int32" />
+          <Property Name="Price" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="UpdateTime" Type="DateTime" Precision="3" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="StoresSysNo" Type="Int32" />
+          <Property Name="Parent" Type="Int32" />
+          <Property Name="Title" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Priority" Type="Int32" />
+          <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+        </EntityType>
+        <EntityType Name="Customer">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Password" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="CustomerExt">
+          <Key>
+            <PropertyRef Name="CustomerSysNo" />
+          </Key>
+          <Property Name="CustomerSysNo" Type="Int32" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="CustomerOrder">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="BookingSysNo" Type="Int32" />
+          <Property Name="OrderSysNo" Type="Int32" />
+          <Property Name="CustomerSysNo" Type="Int32" />
+        </EntityType>
+        <EntityType Name="News">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="NewsTypeSysNo" Type="Int32" />
+          <Property Name="Title" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Content" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="TopMost" Type="Boolean" />
+          <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="NewsType">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="Parent" Type="Int32" />
+          <Property Name="Title" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Priority" Type="Int32" />
+          <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="StoresSysNo" Type="Int32" />
+          <Property Name="CustomerSysNo" Type="Int32" />
+          <Property Name="SellerUserSysNo" Type="Int32" />
+          <Property Name="Amount" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="PreTime" Type="DateTime" Precision="3" />
+          <Property Name="UseTime" Type="DateTime" Precision="3" />
+          <Property Name="Note" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="OrderItem">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="OrderSysNo" Type="Int32" />
+          <Property Name="ProductSysNo" Type="Int32" />
+          <Property Name="Quantity" Type="Int32" />
+          <Property Name="Price" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="UpdateTime" Type="DateTime" Precision="3" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="StoresSysNo" Type="Int32" />
+          <Property Name="CategorySysNo" Type="Int32" />
+          <Property Name="Title" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Code" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Price" Type="Decimal" Precision="20" Scale="0" />
+          <Property Name="Note" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Detail" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="Recommend" Type="Boolean" />
+          <Property Name="Priority" Type="Int32" />
+          <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="ProductProperty">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="ProductSysNo" Type="Int32" />
+          <Property Name="PropertySysNo" Type="Int32" />
+          <Property Name="PropertyValueSysNo" Type="Int32" />
+          <Property Name="CustomValue" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Priority" Type="Int32" />
+          <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="ProductReview">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="ProductSysNo" Type="Int32" />
+          <Property Name="Priority" Type="Int32" />
+          <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Property">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="CategorySysNo" Type="Int32" />
+          <Property Name="Title" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Note" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Priority" Type="Int32" />
+          <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="PropertyValue">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="PropertySysNo" Type="Int32" />
+          <Property Name="Value" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Priority" Type="Int32" />
+          <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Seller">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Note" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="SellerAction">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="Parent" Type="Int32" />
+          <Property Name="Title" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Url" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Type" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="Priority" Type="Int32" />
+          <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="SellerRole">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="SellerSysNo" Type="Int32" />
+          <Property Name="Title" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="SellerRoleAction">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="RoleSysNo" Type="Int32" />
+          <Property Name="ActionSysNo" Type="Int32" />
+        </EntityType>
+        <EntityType Name="SellerUser">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="SellerSysNo" Type="Int32" />
+          <Property Name="RoleSysNo" Type="Int32" />
+          <Property Name="UserName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Password" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Stores">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="SellerSysNo" Type="Int32" />
+          <Property Name="AreaSysNo" Type="Int32" />
+          <Property Name="Title" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Name" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Address" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Phone" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="WorkTime" Type="DateTime" Precision="3" />
+          <Property Name="Note" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+          <Property Name="Detail" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="Priority" Type="Int32" />
+          <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="StoresUser">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="SellerUserSysNo" Type="Int32" />
+          <Property Name="StoresSysNo" Type="Int32" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="SysAction">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="Parent" Type="Int32" />
+          <Property Name="Title" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Url" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Type" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="Priority" Type="Int32" />
+          <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="SysConfig">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="Key" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Value" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CreateDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="SysEventLog">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="Source" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Category" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="IP" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="HostName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="EventType" Type="Int32" />
+          <Property Name="EventTitle" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="EventMessage" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="EventDetail" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="CreateDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="SysRole">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="SysRoleAction">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="RoleSysNo" Type="Int32" />
+          <Property Name="ActionSysNo" Type="Int32" />
+        </EntityType>
+        <EntityType Name="SysUser">
+          <Key>
+            <PropertyRef Name="SysNo" />
+          </Key>
+          <Property Name="SysNo" Type="Int32" Nullable="false" />
+          <Property Name="StoresSysNo" Type="Int32" />
+          <Property Name="RoleSysNo" Type="Int32" />
+          <Property Name="UserName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Password" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Status" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SvHooServiceImplementStoreContainer" CdmEntityContainer="DatabaseEntities">
+          <EntitySetMapping Name="Area">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.Area">
+              <MappingFragment StoreEntitySet="Area">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="Parent" ColumnName="Parent" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Banner">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.Banner">
+              <MappingFragment StoreEntitySet="Banner">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="BannerType" ColumnName="BannerType" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BannerLocation">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.BannerLocation">
+              <MappingFragment StoreEntitySet="BannerLocation">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="BannerSysNo" ColumnName="BannerSysNo" />
+                <ScalarProperty Name="PageID" ColumnName="PageID" />
+                <ScalarProperty Name="BeginDate" ColumnName="BeginDate" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="Proiority" ColumnName="Proiority" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Booking">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.Booking">
+              <MappingFragment StoreEntitySet="Booking">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="StoresSysNo" ColumnName="StoresSysNo" />
+                <ScalarProperty Name="CustomerSysNo" ColumnName="CustomerSysNo" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="PreTime" ColumnName="PreTime" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BookingItem">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.BookingItem">
+              <MappingFragment StoreEntitySet="BookingItem">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="BookingSysNo" ColumnName="BookingSysNo" />
+                <ScalarProperty Name="ProductSysNo" ColumnName="ProductSysNo" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Category">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.Category">
+              <MappingFragment StoreEntitySet="Category">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="StoresSysNo" ColumnName="StoresSysNo" />
+                <ScalarProperty Name="Parent" ColumnName="Parent" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Customer">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.Customer">
+              <MappingFragment StoreEntitySet="Customer">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CustomerExt">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.CustomerExt">
+              <MappingFragment StoreEntitySet="CustomerExt">
+                <ScalarProperty Name="CustomerSysNo" ColumnName="CustomerSysNo" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CustomerOrder">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.CustomerOrder">
+              <MappingFragment StoreEntitySet="CustomerOrder">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="BookingSysNo" ColumnName="BookingSysNo" />
+                <ScalarProperty Name="OrderSysNo" ColumnName="OrderSysNo" />
+                <ScalarProperty Name="CustomerSysNo" ColumnName="CustomerSysNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="News">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.News">
+              <MappingFragment StoreEntitySet="News">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="NewsTypeSysNo" ColumnName="NewsTypeSysNo" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="TopMost" ColumnName="TopMost" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NewsType">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.NewsType">
+              <MappingFragment StoreEntitySet="NewsType">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="Parent" ColumnName="Parent" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Order">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.Order">
+              <MappingFragment StoreEntitySet="Order">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="StoresSysNo" ColumnName="StoresSysNo" />
+                <ScalarProperty Name="CustomerSysNo" ColumnName="CustomerSysNo" />
+                <ScalarProperty Name="SellerUserSysNo" ColumnName="SellerUserSysNo" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="PreTime" ColumnName="PreTime" />
+                <ScalarProperty Name="UseTime" ColumnName="UseTime" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OrderItem">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.OrderItem">
+              <MappingFragment StoreEntitySet="OrderItem">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="OrderSysNo" ColumnName="OrderSysNo" />
+                <ScalarProperty Name="ProductSysNo" ColumnName="ProductSysNo" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Product">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.Product">
+              <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="StoresSysNo" ColumnName="StoresSysNo" />
+                <ScalarProperty Name="CategorySysNo" ColumnName="CategorySysNo" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="Detail" ColumnName="Detail" />
+                <ScalarProperty Name="Recommend" ColumnName="Recommend" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProductProperty">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.ProductProperty">
+              <MappingFragment StoreEntitySet="ProductProperty">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="ProductSysNo" ColumnName="ProductSysNo" />
+                <ScalarProperty Name="PropertySysNo" ColumnName="PropertySysNo" />
+                <ScalarProperty Name="PropertyValueSysNo" ColumnName="PropertyValueSysNo" />
+                <ScalarProperty Name="CustomValue" ColumnName="CustomValue" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProductReview">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.ProductReview">
+              <MappingFragment StoreEntitySet="ProductReview">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="ProductSysNo" ColumnName="ProductSysNo" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Property">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.Property">
+              <MappingFragment StoreEntitySet="Property">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="CategorySysNo" ColumnName="CategorySysNo" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PropertyValue">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.PropertyValue">
+              <MappingFragment StoreEntitySet="PropertyValue">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="PropertySysNo" ColumnName="PropertySysNo" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Seller">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.Seller">
+              <MappingFragment StoreEntitySet="Seller">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SellerAction">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.SellerAction">
+              <MappingFragment StoreEntitySet="SellerAction">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="Parent" ColumnName="Parent" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SellerRole">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.SellerRole">
+              <MappingFragment StoreEntitySet="SellerRole">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="SellerSysNo" ColumnName="SellerSysNo" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SellerRoleAction">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.SellerRoleAction">
+              <MappingFragment StoreEntitySet="SellerRoleAction">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="RoleSysNo" ColumnName="RoleSysNo" />
+                <ScalarProperty Name="ActionSysNo" ColumnName="ActionSysNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SellerUser">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.SellerUser">
+              <MappingFragment StoreEntitySet="SellerUser">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="SellerSysNo" ColumnName="SellerSysNo" />
+                <ScalarProperty Name="RoleSysNo" ColumnName="RoleSysNo" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Stores">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.Stores">
+              <MappingFragment StoreEntitySet="Stores">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="SellerSysNo" ColumnName="SellerSysNo" />
+                <ScalarProperty Name="AreaSysNo" ColumnName="AreaSysNo" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="WorkTime" ColumnName="WorkTime" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="Detail" ColumnName="Detail" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StoresUser">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.StoresUser">
+              <MappingFragment StoreEntitySet="StoresUser">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="SellerUserSysNo" ColumnName="SellerUserSysNo" />
+                <ScalarProperty Name="StoresSysNo" ColumnName="StoresSysNo" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SysAction">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.SysAction">
+              <MappingFragment StoreEntitySet="SysAction">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="Parent" ColumnName="Parent" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SysConfig">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.SysConfig">
+              <MappingFragment StoreEntitySet="SysConfig">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="Key" ColumnName="Key" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SysEventLog">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.SysEventLog">
+              <MappingFragment StoreEntitySet="SysEventLog">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="Source" ColumnName="Source" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="IP" ColumnName="IP" />
+                <ScalarProperty Name="HostName" ColumnName="HostName" />
+                <ScalarProperty Name="EventType" ColumnName="EventType" />
+                <ScalarProperty Name="EventTitle" ColumnName="EventTitle" />
+                <ScalarProperty Name="EventMessage" ColumnName="EventMessage" />
+                <ScalarProperty Name="EventDetail" ColumnName="EventDetail" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SysRole">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.SysRole">
+              <MappingFragment StoreEntitySet="SysRole">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SysRoleAction">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.SysRoleAction">
+              <MappingFragment StoreEntitySet="SysRoleAction">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="RoleSysNo" ColumnName="RoleSysNo" />
+                <ScalarProperty Name="ActionSysNo" ColumnName="ActionSysNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SysUser">
+            <EntityTypeMapping TypeName="SvHoo.Service.Implement.SysUser">
+              <MappingFragment StoreEntitySet="SysUser">
+                <ScalarProperty Name="SysNo" ColumnName="SysNo" />
+                <ScalarProperty Name="StoresSysNo" ColumnName="StoresSysNo" />
+                <ScalarProperty Name="RoleSysNo" ColumnName="RoleSysNo" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams />
+  </Designer>
+</edmx:Edmx>
