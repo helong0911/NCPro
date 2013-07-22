@@ -16,7 +16,7 @@ namespace SvHoo.UI.Backend
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Default", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "SysUser", action = "Index", id = UrlParameter.Optional }
             );
         }
     }
